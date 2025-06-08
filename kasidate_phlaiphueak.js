@@ -1,7 +1,7 @@
 function quickestPath(portals) {
-   const END_BLOCK = 200;
-  let queue = [{ pos: 1, steps: 0 }];  
-  let visited = []
+  const END_BLOCK = 200;
+  let queue = [{ pos: 1, steps: 0 }];
+  let visited = [];
   visited[1] = true;
 
   while (queue.length > 0) {
@@ -31,4 +31,3 @@ function quickestPath(portals) {
   }
   return -1;
 }
-
